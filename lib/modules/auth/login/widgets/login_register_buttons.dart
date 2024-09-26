@@ -29,7 +29,9 @@ class _LoginRegisterButtons extends StatelessWidget {
         ),
 
         RoundedButtonWithIcon(
-          onTap: () {},
+          onTap: () {
+            Navigator.pushNamed(context, '/register/');
+          },
           width: .42.sw,
           color: context.primaryColorDark,
           icon: Icons.email,
